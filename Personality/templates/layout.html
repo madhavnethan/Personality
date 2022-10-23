@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <title>Which Avengers character are you?</title>
+    </head>
+    <body>
+        
+        <div class="jumbotron">
+            <h1>Which Avengers character are you?</h1>
+        </div>
+        
+        <div class="main">
+            {% block body %}{% endblock %} 
+        </div>
+    </body>
+</html>

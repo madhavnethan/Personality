@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="row">
+  <div class="column left">
+      <p>You are {{avg_name}}!</p>
+      <a href="{{ url_for('index') }}">Play Again.</a>
+  </div>
+
+  <div class="column middle">
+      <img src='{{avg_image}}' alt="User Image">
+  </div>
+</div>
+
+{% endblock %}

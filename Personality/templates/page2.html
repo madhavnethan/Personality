@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="{{ url_for('index') }}" method = "post">
+    
+    <!-- add values from first page as hidden input types. -->
+    
+    <input type="hidden" name="skill" value="{{skill}}">
+    <input type="hidden" name="car" value="{{car}}">
+    <input type="hidden" name="live" value="{{live}}">
+    <input type="hidden" name="house" value="{{house}}">
+    
+     <div class = "section">
+    Which of the following traits would you like to have?<br/>
+    <input type="checkbox" name="traits" value="Funny">Funny<br/>
+    <input type="checkbox" name="traits" value="Serious">Serious<br/>
+    <input type="checkbox" name="traits" value="Angry">Angry<br/>
+    <input type="checkbox" name="traits" value="Kind">Kind<br/>
+    </div>
+
+    <div class = "section">
+    What music do you like?<br/>
+    <input type="checkbox" name="music" value="Pop">Pop<br/>
+    <input type="checkbox" name="music" value="Jazz">Jazz<br/>
+    <input type="checkbox" name="music" value="Rock">Rock<br/>
+    <input type="checkbox" name="music" value="H-H">Hip-Hop<br/>
+    </div>
+
+    <div class = "section">
+    What is your favorite color?<br/>
+    <input type="color" id="favcolor" name="color" value="#ff0000">
+    </div>
+
+    <div class = "section">
+    Would you like to solve a problem in an Independent way or with a team?<br/>
+    (0 being most Independent and 10 being most team player)<br/>
+    <input type="range" min="1" max="20" value="team" class="slider" name="team"><br/>
+    </div>
+    
+    
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

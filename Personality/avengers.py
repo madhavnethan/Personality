@@ -1,0 +1,8 @@
+CA = "Captain America"
+IM = "Iron Man"
+BW = "Black Widow"
+HK = "Hulk"
+HE = "Hawkeye"
+BP = "Black Panther"
+TH = "Thor"
+SM = "Spider-Man"

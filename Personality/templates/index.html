@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="{{ url_for('page2') }}" method = "post">
+    <div class="container">
+    <div class = "section">
+    What is your name:<br/>
+    <input type="text" name="name"><br/>
+    </div>
+
+    <div class = "section">
+    What skill would you like to have?<br/>
+    <select name="skill">
+        <option value="SS">Super Strength</option>
+        <option value="MA">Martial Arts</option>
+        <option value="F">Flying</option>
+        <option value="S">Shooting</option>
+    </select>
+    </div>
+
+    <div class = "section">
+    What car would you like to have?<br/>
+    <input type="radio" name="car" value="Lambo">Lamborghini<br/>
+    <input type="radio" name="car" value="Jeep">Jeep Wrangler<br/>
+    <input type="radio" name="car" value="Cadillac">Cadillac<br/>
+    <input type="radio" name="car" value="Lexus">Lexus<br/>
+    </div>
+
+    <div class = "section">
+    Where would you like to live?<br/>
+    <select name="live">
+        <option value="NY">New York</option>
+        <option value="LA">Los Angeles</option>
+        <option value="BA">Bahamas</option>
+        <option value="BU">Budapest</option>
+    </select><br/>
+    </div>
+
+    <div class = "section">
+    What house would you like to have?<br/>
+    <select name="house">
+        <option value="mansion">Mansion</option>
+        <option value="reg">Regular House</option>
+        <option value="apart">Apartment</option>
+        <option value="kingdom">Kingdom</option>
+    </select><br/>
+    </div>
+
+   
+
+    <button type="submit">Next</button>
+    </div>
+</form>
+{% endblock %}
